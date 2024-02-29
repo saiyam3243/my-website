@@ -110,8 +110,8 @@ easing="easeInQuad"> */}
       <div className="mt-20 flex justify-between ml-20 mr-20">
         <Parallax speed={30} translateY={[20, -50]} scale={[1.2, 0.9]}>
           <div className="grid grid-cols-1 gap-y-80">
-            {workExpOne.map((item) => {
-              return <Card title={item[0]} position={item[1]} location={item[2]} start={item[3]} end={item[4]} content={item[5]} />
+            {workExpOne.map((item, index) => {
+              return <Card key={index} title={item[0]} position={item[1]} location={item[2]} start={item[3]} end={item[4]} content={item[5]} />
             })}
           </div>
         </Parallax>
@@ -126,8 +126,8 @@ easing="easeInQuad"> */}
         </div>
         <Parallax speed={40} scale={[0.9, 1.3]}>
           <div className="grid grid-cols-1 gap-y-80">
-            {workExpTwo.map((item) => {
-              return <Card title={item[0]} position={item[1]} location={item[2]} start={item[3]} end={item[4]} content={item[5]} />
+            {workExpTwo.map((item, index) => {
+              return <Card key={index} title={item[0]} position={item[1]} location={item[2]} start={item[3]} end={item[4]} content={item[5]} />
             })
             }
           </div>
