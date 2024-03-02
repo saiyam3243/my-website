@@ -1,6 +1,7 @@
+import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 
-const ScrambleText: React.FC<{ text: string }> = ({ text }) => {
+const ScrambleText: React.FC<{ text: string, id: string }> = ({ text, id }) => {
   const [scrambledText, setScrambledText] = useState(text);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -19,24 +20,24 @@ const ScrambleText: React.FC<{ text: string }> = ({ text }) => {
     };
 
     if (isHovered) {
-      intervalId = setInterval(scramble, 50);
+      intervalId = setInterval(scramble, 30);
       setTimeout(() => {
         clearInterval(intervalId);
         setScrambledText(text); // Reveal the original text after scrambling
-      }, 400); // Adjust time as needed
+      }, 300); // Adjust time as needed
     }
 
     return () => clearInterval(intervalId);
   }, [isHovered, text]);
 
   return (
-    <div
+    <Link href= {id}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="hover:text-orange-600"
+      className="hover:text-orange-600 ease-in delay-100"
     >
       {scrambledText}
-    </div>
+    </Link>
   );
 };
 
