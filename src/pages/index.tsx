@@ -19,11 +19,8 @@ export default function Home() {
 
   return (
     <main
-      className={`min-h-screen bg-black p-12 text-white overflow-x-hidden overflow-y-hidden cursor-none ${inter.className}`}
+      className={`min-h-screen bg-[#191919] p-12 text-white overflow-x-hidden overflow-y-hidden cursor-none ${inter.className}`}
     >
-      <div className="scroll-bar">
-      <div className="scroll-state scrollState"></div>
-    </div>
       <Header />
       <LandingPage />
       <RotateStyle />

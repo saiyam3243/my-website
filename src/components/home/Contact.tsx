@@ -5,21 +5,18 @@ import Tilt from "react-parallax-tilt";
 
 const Contact: React.FC = () => {
     return (
-        <div id="footer" className="h-svh flex flex-col justify-around ">
-            <div>
+        <div id="footer" className="h-dvh flex flex-col justify-center items-center">
+                <Tilt className="flex justify-center scale-110 m-10"
+                    perspective={600}
+                    glareEnable={false}
+                    glareMaxOpacity={0.15}
+                    scale={1.02}
+                    gyroscope={false}>
+                    <img src="/signature1.png" alt="logo" width={700} height={800} className="p-10 bg-white text-white" />
+                </Tilt>
                 <div>
-                    <Tilt className="flex justify-center h-full w-full"
-                        perspective={1000}
-                        glareEnable={true}
-                        glareMaxOpacity={0.15}
-                        scale={1.02}
-                        gyroscope={true}>
-                        <img src="/profilepic.jpg" alt="logo" width={700} height={700} className="grayscale" />
-                    </Tilt>
-                </div>
-                <div>
-                    <div className="flex justify-center text-9xl font-bold m-6">
-                        Lets Work Together!
+                    <div className="flex justify-center text-7xl font-bold m-6">
+                        Let&apos;s Work Together!
                     </div>
                     {/* <Link className="flex justify-center text-4xl font-normal hover:text-orange-600 hover:cursor-none" href={"mailto:sjain3243@gmail.com"} >
                     sjain3243@gmail.com
@@ -27,7 +24,6 @@ const Contact: React.FC = () => {
                     <div className='flex justify-center text-4xl font-normal hover:text-orange-600 hover:cursor-none'>
                         <ScrambleText text="sjain3243@gmail.com" id="mailto:sjain3243@gmail.com" /></div>
                 </div>
-            </div>
 
         </div>
     );

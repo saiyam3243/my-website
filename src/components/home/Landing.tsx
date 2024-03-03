@@ -21,15 +21,12 @@ const LandingPage: React.FC = () => {
                             <div className="absolute inset-0 flex items-center justify-center">
                                 {/* <div className=" inset-0 bg-gradient-to-t from-gray-900 to-blue-900" /> */}
                                 {/* <h1 className="text-4xl">I am a&nbsp;</h1> */}
-                                <Typewriter toType={["Welcome to Saiyam Jain", "Software Developer", "Frontend Developer", "Student", "Cricketer", "Teacher"]} />
-                                {/* <video autoPlay loop muted className="object-cover w-full h-full">
-                      <source src="/temp.mp4" type="video/mp4" />
-                    </video> */}
+                                <Typewriter toType={["Saiyam Jain", "Munich", "Software Developer", "Frontend Developer"]} />
                             </div>
                         ),
                     },
                 ]}
-                className="aspect-[2/1] mb-40"
+                className="aspect-[2/1] mb-20"
             />
         </div>
     );

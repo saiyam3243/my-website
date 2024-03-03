@@ -35,13 +35,11 @@ const Works: React.FC = () => {
     }, []);
 
     return (
-        <div className="h-dvh flex flex-col justify-evenly">
-            <div className="h-20">
-                <div data-aos="flip-up" data-aos-duration="1000" className="flex justify-center">
+        <div className="h-dvh flex flex-col justify-evenly mt-20">
+                <div data-aos="flip-up" data-aos-duration="1000" className="flex justify-center h-20">
                     <h1 className="text-6xl font-bold pl-20">Works</h1>
-                    <h1 className="text-6xl animate-tiltshaking origin-[50%_80%]">👋</h1>
+                    <h1 className="text-6xl animate-bounce">&nbsp; 🛠️</h1>
                 </div>
-            </div>
             <div id="works" className="section flex overflow-x-scroll" ref={horizontalScrollRef}>
                 {reversedWorkExpOne.map((item, index) => {
                     return <Card key={index} title={item[0]} position={item[1]} location={item[2]} start={item[3]} end={item[4]} content={item[5]} />

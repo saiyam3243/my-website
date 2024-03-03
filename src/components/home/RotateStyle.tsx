@@ -23,7 +23,7 @@ const RotateStyle = () => {
                     <img src="/profilepic.jpg" alt="logo" width={700} height={700} className="grayscale" />
                 </Tilt>
             </div>
-            <div className="relative flex items-center text-[300px] font-bold text-gray-700 z-10 select-none" ref={parallax1.ref}>
+            <div className="relative flex items-center text-[300px] font-bold text-gray-600 z-10 select-none" ref={parallax1.ref}>
                 <h1 className="text-block pr-24 whitespace-nowrap animate-movewords tracking-tighter">Creative Developer </h1>
                 <h1 className="text-block pr-24 whitespace-nowrap animate-movewords tracking-tighter">Creative Developer </h1>
                 <h1 className="text-block pr-24 whitespace-nowrap animate-movewords tracking-tighter">Creative Developer </h1>
