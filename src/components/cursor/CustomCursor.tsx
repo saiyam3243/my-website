@@ -48,7 +48,7 @@ const CustomCursor: React.FC<{ text?: string }> = ({ text }) => {
         left: `${cursorPosition.x}px`,
         top: `${cursorPosition.y}px`,
       }}
-      className={`fixed pointer-events-none w-8 h-8 rounded-full bg-[#fca311] transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-300 ${text}`}
+      className={`fixed pointer-events-none w-7 h-7 rounded-full bg-[#fca311] transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-300 ${text}`}
     />
   );
 };

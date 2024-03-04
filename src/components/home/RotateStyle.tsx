@@ -11,25 +11,45 @@ const RotateStyle = () => {
         translateX: [100, 0],
         easing: 'easeOutQuad',
     });
+
+    function getWindowDimensions() {
+        if (typeof window !== "undefined") {
+            // Client-side-only code
+            const { innerWidth: width, innerHeight: height } = window;
+            return {
+                width: (width/2),
+                height: (height/2)
+            };
+        }
+        return {
+            width: 0,
+            height: 0
+        } as { width: number; height: number };
+    }
+
+    const { height, width } = getWindowDimensions();
+    // console.log(height, width);
     return (
-        <div className="h-dvh">
+        <div className="h-dvh mb-20" id="footer">
             <div className="flex justify-center relative">
-                <Tilt className="absolute top-60 z-10"
-                    perspective={800}
+                <Tilt className="absolute top-48 z-10"
+                    perspective={1000}
                     glareEnable={true}
                     glareMaxOpacity={0.15}
-                    scale={1.02}
+                    scale={1}
                     gyroscope={false}>
-                    <img src="/profilepic.jpg" alt="logo" width={700} height={700} className="grayscale" />
+                    <img src="/profilepic.jpg" alt="logo" width={height>500? 600: 500} height={height>500?600:500} className="grayscale" />
                 </Tilt>
             </div>
-            <div className="relative flex items-center text-[300px] font-bold text-gray-600 z-10 select-none" ref={parallax1.ref}>
+            <div className="relative flex items-center text-[240px] font-bold text-gray-600 z-10 select-none" ref={parallax1.ref}>
+                <h1 className="text-block pr-24 whitespace-nowrap animate-movewords tracking-tighter">Creative Developer </h1>
                 <h1 className="text-block pr-24 whitespace-nowrap animate-movewords tracking-tighter">Creative Developer </h1>
                 <h1 className="text-block pr-24 whitespace-nowrap animate-movewords tracking-tighter">Creative Developer </h1>
                 <h1 className="text-block pr-24 whitespace-nowrap animate-movewords tracking-tighter">Creative Developer </h1>
                 <h1 className="text-block pr-24 whitespace-nowrap animate-movewords tracking-tighter">Creative Developer </h1>
             </div>
-            <div className="flex text-[300px] font-bold text-gray-700 select-none" ref={parallax2.ref}>
+            <div className="flex text-[240px] font-bold text-gray-600 select-none" ref={parallax2.ref}>
+                <h1 className="text-block pr-24 whitespace-nowrap animate-movewords2 tracking-tighter">Creative Developer </h1>
                 <h1 className="text-block pr-24 whitespace-nowrap animate-movewords2 tracking-tighter">Creative Developer </h1>
                 <h1 className="text-block pr-24 whitespace-nowrap animate-movewords2 tracking-tighter">Creative Developer </h1>
                 <h1 className="text-block pr-24 whitespace-nowrap animate-movewords2 tracking-tighter">Creative Developer </h1>

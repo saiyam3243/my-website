@@ -16,10 +16,10 @@ const About: React.FC = () => {
                 easing={'easeOut'}
                 className=''
             > */}
-                <div className="flex flex-col justify-center text-6xl space-y-6 mb-30 text-center leading-snug font-medium">
+                <div className="flex flex-col justify-center text-5xl space-y-6 mb-30 text-center leading-snug font-medium">
                     <h1 data-aos="fade-up" data-aos-duration="800">Ambitious guy with a genuine passion in Software Development.</h1>
                     <h1 data-aos="fade-up" data-aos-duration="900">I believe in Creativity, Quality, Pace and Hardwork.</h1>
-                    <h1 data-aos="fade-up" data-aos-duration="1000">Frontend-Backend Development</h1>
+                    <h1 data-aos="fade-up" data-aos-duration="800">Frontend-Backend Development</h1>
                 </div>
             {/* </Parallax> */}
         </div>
