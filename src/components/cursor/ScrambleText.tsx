@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
+import smoothScrollTo from '../utils/SmoothScrollTo';
 
 const ScrambleText: React.FC<{ text: string, id: string }> = ({ text, id }) => {
   const [scrambledText, setScrambledText] = useState(text);
@@ -30,8 +31,11 @@ const ScrambleText: React.FC<{ text: string, id: string }> = ({ text, id }) => {
     return () => clearInterval(intervalId);
   }, [isHovered, text]);
 
+  const handleScroll = (selector: string, duration: number) => {
+    smoothScrollTo(selector, duration);
+  };
   return (
-    <Link href= {id}
+    <Link href= {id} onClick={() => handleScroll(id, 1200)}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className="hover:text-[#fca311] ease-in delay-100"

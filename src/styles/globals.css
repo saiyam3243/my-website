@@ -26,6 +26,9 @@ body {
     rgb(var(--background-start-rgb));
   scroll-behavior: smooth;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 @layer utilities {
   .text-balance {
@@ -56,24 +59,24 @@ visibility: transparent;}
 *::-webkit-scrollbar-thumb {
   background-color: #fca311;
   border-radius: 100px;
-  border: 6px solid rgba(0, 0, 0, 0.2);
+  border: 6px solid rgba(0, 0, 0, 0.5);
   height: 10px;
 
 }
 
-.section::-webkit-scrollbar {
+/* .section::-webkit-scrollbar {
   width: 4px;
   scrollbar-width: thin;
   scrollbar-color: #1a191a #12369a;
   /* transition: scrollbar-color 0.3s ease-out; */
-}
-.section::-webkit-scrollbar-thumb {
+/* } */
+/* .section::-webkit-scrollbar-thumb {
   /* box-shadow: inset 2px 2px 5px 0 rgba(#000000, 0.5); */
-  width: 2px;
+  /* width: 2px;
 }
 .section::-webkit-scrollbar-track {
   background: #000000;
   border-radius: 10px;
   background-color: transparent;
 
-}
+}   */

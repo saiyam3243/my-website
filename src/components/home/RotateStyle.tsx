@@ -12,7 +12,7 @@ const RotateStyle = () => {
         easing: 'easeOutQuad',
     });
     return (
-        <div className="h-dvh mt-32">
+        <div className="h-dvh">
             <div className="flex justify-center relative">
                 <Tilt className="absolute top-60 z-10"
                     perspective={800}

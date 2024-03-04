@@ -11,18 +11,19 @@ import RotateStyle from "@/components/home/RotateStyle";
 import LandingPage from "@/components/home/Landing";
 import Skills from "@/components/home/Skills";
 import Contact from "@/components/home/Contact";
+import { useParallax } from "react-scroll-parallax";
+import smoothScrollTo from "@/components/utils/SmoothScrollTo";
 export default function Home() {
 
   useEffect(() => {
     AOS.init();
-  }, [])
-
+  }, []);
   return (
     <main
       className={`min-h-screen bg-[#191919] p-12 text-white overflow-x-hidden overflow-y-hidden cursor-none ${inter.className}`}
     >
       <Header />
-      <LandingPage />
+      {/* <LandingPage /> */}
       <RotateStyle />
       <About />
       <Skills />

@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
                     gyroscope={false}>
                     <img src="/signature1.png" alt="logo" width={700} height={800} className="p-10 bg-white text-white" />
                 </Tilt>
-                <div>
+                <div data-aos="fade-up" data-aos-duration="1200">
                     <div className="flex justify-center text-7xl font-bold m-6">
                         Let&apos;s Work Together!
                     </div>
