@@ -32,12 +32,12 @@ const RotateStyle = () => {
     return (
         <div id="footer">
             <div className="flex justify-center relative">
-                <Tilt className="absolute top-48 z-10"
+                <Tilt className="absolute top-48 z-10 w-full flex justify-center"
                     perspective={1000}
                     glareEnable={true}
-                    glareMaxOpacity={0.15}
+                    glareMaxOpacity={0}
                     scale={1}
-                    gyroscope={false}>
+                    gyroscope={true}>
                     <img src="/profilepic.jpg" alt="logo" width={height > 500 ? 600 : 500} height={height > 500 ? 600 : 500} className="grayscale" />
                 </Tilt>
             </div>

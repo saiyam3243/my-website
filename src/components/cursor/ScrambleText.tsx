@@ -11,7 +11,7 @@ const ScrambleText: React.FC<{ text: string, id: string }> = ({ text, id }) => {
 
     const scramble = () => {
       let result = text.split('');
-      for (let i = 0; i < text.length ; i++) {
+      for (let i = 0; i < text.length; i++) {
         const j = Math.floor(Math.random() * (i + 1));
         if (j >= 0 && j < text.length - 1) {
           [result[i], result[j]] = [result[j], result[i]];
@@ -35,7 +35,7 @@ const ScrambleText: React.FC<{ text: string, id: string }> = ({ text, id }) => {
     smoothScrollTo(selector, duration);
   };
   return (
-    <Link href= {id} onClick={() => handleScroll(id, 1200)}
+    <Link href={id} onClick={() => handleScroll(id, 1200)}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className="hover:text-[#fca311] ease-in delay-100"

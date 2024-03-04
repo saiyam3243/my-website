@@ -13,7 +13,7 @@ const Header: React.FC = () => {
                 <Link className="fixed" href="/">
                     <img src="/sj-logo.png" alt="logo" width={80} height={80} />
                 </Link>
-                <div className="p-2 rounded-xl fixed end-10 flex content-center grid gap-x-8 grid-cols-4 backdrop-blur-md hover:cursor-pointer font-medium tracking-wide text-lg">
+                <div className="p-2 rounded-xl fixed end-10 flex content-center grid gap-x-8 grid-cols-4 backdrop-blur-md hover:cursor-pointer font-medium tracking-wide text-base">
                     {/* <ScrambleText text="Home" id = "/"/> */}
                     <ScrambleText text="About" id="#about"/>
                     <ScrambleText text="Skills" id="#skills"/>
