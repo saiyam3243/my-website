@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParallax } from 'react-scroll-parallax';
 import Tilt from "react-parallax-tilt";
+import Image from 'next/image';
 
 const RotateStyle = () => {
     const parallax1 = useParallax<HTMLDivElement>({
@@ -28,7 +29,6 @@ const RotateStyle = () => {
     }
 
     const { height, width } = getWindowDimensions();
-    // console.log(height, width);
     return (
         <div>
             <div className="flex justify-center relative"  id="footer">
@@ -38,7 +38,7 @@ const RotateStyle = () => {
                     glareMaxOpacity={0}
                     scale={1}
                     gyroscope={true}>
-                    <img src="/profilepic.jpg" alt="logo" width={height > 500 ? 600 : 500} height={height > 500 ? 600 : 500} className="grayscale" />
+                    <Image src="/profilepic.jpg" alt="logo" width={height > 500 ? 600 : 500} height={height > 500 ? 600 : 500} className="grayscale" />
                 </Tilt>
             </div>
             <div className="relative flex items-center text-[240px] font-bold text-gray-600 z-10 select-none" ref={parallax1.ref}>
