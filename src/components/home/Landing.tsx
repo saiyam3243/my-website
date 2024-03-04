@@ -18,7 +18,7 @@ const LandingPage: React.FC = () => {
                     {
                         speed: -55,
                         children: (
-                            <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="absolute inset-0 flex items-center justify-center text-gray-600 font-medium">
                                 {/* <div className=" inset-0 bg-gradient-to-t from-gray-900 to-blue-900" /> */}
                                 {/* <h1 className="text-4xl">I am a&nbsp;</h1> */}
                                 <Typewriter toType={["Saiyam Jain", "Munich", "Software Developer", "Frontend Developer"]} />

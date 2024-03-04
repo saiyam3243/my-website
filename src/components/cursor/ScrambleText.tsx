@@ -34,7 +34,7 @@ const ScrambleText: React.FC<{ text: string, id: string }> = ({ text, id }) => {
     <Link href= {id}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="hover:text-orange-600 ease-in delay-100"
+      className="hover:text-[#fca311] ease-in delay-100"
     >
       {scrambledText}
     </Link>

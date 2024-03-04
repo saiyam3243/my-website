@@ -37,7 +37,7 @@ const Works: React.FC = () => {
     return (
         <div className="h-dvh flex flex-col justify-evenly mt-20">
                 <div data-aos="flip-up" data-aos-duration="1000" className="flex justify-center h-20">
-                    <h1 className="text-6xl font-bold pl-20">Works</h1>
+                    <h1 className="text-6xl font-bold pl-20 text-gray-600">Works</h1>
                     <h1 className="text-6xl animate-bounce">&nbsp; 🛠️</h1>
                 </div>
             <div id="works" className="section flex overflow-x-scroll" ref={horizontalScrollRef}>

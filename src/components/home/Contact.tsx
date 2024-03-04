@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
                     {/* <Link className="flex justify-center text-4xl font-normal hover:text-orange-600 hover:cursor-none" href={"mailto:sjain3243@gmail.com"} >
                     sjain3243@gmail.com
                 </Link> */}
-                    <div className='flex justify-center text-4xl font-normal hover:text-orange-600 hover:cursor-none'>
+                    <div className='flex justify-center text-4xl font-normal hover:cursor-none text-gray-600'>
                         <ScrambleText text="sjain3243@gmail.com" id="mailto:sjain3243@gmail.com" /></div>
                 </div>
 

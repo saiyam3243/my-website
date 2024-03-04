@@ -4,7 +4,7 @@ import TagCloud, { TagCloudOptions } from "@frank-mayer/react-tag-cloud";
 export const SkillSphere = () => {
     return (
         <div className="flex justify-center align-center">
-            <TagCloud className="tagcloud text-5xl font-bold text-gray-600 shadow-2xl drop-shadow-2xl"
+            <TagCloud className="tagcloud text-4xl font-semibold shadow-2xl drop-shadow-xl"
                 options={(w: Window & typeof globalThis): TagCloudOptions => ({
                     radius: Math.min(800, w.innerWidth, w.innerHeight) / 2,
                     maxSpeed: "fast",
