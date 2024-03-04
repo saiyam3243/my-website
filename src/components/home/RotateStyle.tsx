@@ -17,8 +17,8 @@ const RotateStyle = () => {
             // Client-side-only code
             const { innerWidth: width, innerHeight: height } = window;
             return {
-                width: (width/2),
-                height: (height/2)
+                width: (width / 2),
+                height: (height / 2)
             };
         }
         return {
@@ -30,7 +30,7 @@ const RotateStyle = () => {
     const { height, width } = getWindowDimensions();
     // console.log(height, width);
     return (
-        <div className="h-dvh mb-20" id="footer">
+        <div id="footer">
             <div className="flex justify-center relative">
                 <Tilt className="absolute top-48 z-10"
                     perspective={1000}
@@ -38,7 +38,7 @@ const RotateStyle = () => {
                     glareMaxOpacity={0.15}
                     scale={1}
                     gyroscope={false}>
-                    <img src="/profilepic.jpg" alt="logo" width={height>500? 600: 500} height={height>500?600:500} className="grayscale" />
+                    <img src="/profilepic.jpg" alt="logo" width={height > 500 ? 600 : 500} height={height > 500 ? 600 : 500} className="grayscale" />
                 </Tilt>
             </div>
             <div className="relative flex items-center text-[240px] font-bold text-gray-600 z-10 select-none" ref={parallax1.ref}>
@@ -54,7 +54,7 @@ const RotateStyle = () => {
                 <h1 className="text-block pr-24 whitespace-nowrap animate-movewords2 tracking-tighter">Creative Developer </h1>
                 <h1 className="text-block pr-24 whitespace-nowrap animate-movewords2 tracking-tighter">Creative Developer </h1>
             </div>
-            </div>
+        </div>
     );
 };
 
