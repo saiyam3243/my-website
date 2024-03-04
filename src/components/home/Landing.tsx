@@ -15,9 +15,9 @@ const LandingPage: React.FC = () => {
                     // },
                     // { image: "signature.png", speed: 30 },
                     {
-                        speed: -50,
+                        speed: -20,
                         opacity: [1, 0.5],
-                        scale: [0.8, 1.2, 'easeInSine'],
+                        scale: [0.8, 1.2, 'easeInCubic'],
                         children: (
                             <div className="absolute inset-0 flex items-center justify-center font-medium" data-aos="fade-down">
                                 {/* <div className=" inset-0 bg-gradient-to-t from-gray-900 to-blue-900" /> */}
