@@ -48,7 +48,7 @@ const Typewriter: React.FC<TypewriterProps> = ({
     }, [text, isDeleting, index, toType, typingSpeed, deletingSpeed, delta, delayBeforeDelete, delayBeforeType])
   
   return (
-    <h1 className="typewrite text-6xl">
+    <h1 className="typewrite text-6xl relative z-30">
       {text}
       <span className="cursor animate-blink">|</span>
     </h1>

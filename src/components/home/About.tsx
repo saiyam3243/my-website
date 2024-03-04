@@ -3,7 +3,7 @@ import { Parallax } from 'react-scroll-parallax';
 
 const About: React.FC = () => {
     return (
-        <div id="about" className="h-dvh flex flex-col justify-evenly">
+        <div id="about" className="h-dvh flex flex-col justify-evenly relative z-30">
             <div className="flex justify-center m-4" data-aos="flip-up" data-aos-duration="1000">
                 <h1 className="text-6xl font-bold pt-20 pl-20 text-gray-600">About</h1>
                 <h1 className="text-6xl mt-20 animate-tiltshaking origin-[80%_80%]">&nbsp;👋</h1>

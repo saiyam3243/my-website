@@ -43,7 +43,6 @@ const Works: React.FC = () => {
             <div className="section flex overflow-x-scroll" ref={horizontalScrollRef}>
                 {reversedWorkExpOne.map((item, index) => {
                     return <Card key={index} title={item[0]} position={item[1]} location={item[2]} start={item[3]} end={item[4]} content={item[5]} />
-
                 })}
             </div>
         </div>

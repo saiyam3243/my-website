@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
-import smoothScrollTo from '../utils/SmoothScrollTo';
+import smoothScrollTo from './SmoothScrollTo';
 
 const ScrambleText: React.FC<{ text: string, id: string }> = ({ text, id }) => {
   const [scrambledText, setScrambledText] = useState(text);

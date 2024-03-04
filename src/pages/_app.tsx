@@ -1,4 +1,4 @@
-import CustomCursor from "@/components/cursor/CustomCursor";
+import CustomCursor from "@/components/utils/CustomCursor";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { ParallaxProvider } from 'react-scroll-parallax';

@@ -30,8 +30,8 @@ const RotateStyle = () => {
     const { height, width } = getWindowDimensions();
     // console.log(height, width);
     return (
-        <div id="footer">
-            <div className="flex justify-center relative">
+        <div>
+            <div className="flex justify-center relative"  id="footer">
                 <Tilt className="absolute top-48 z-10 w-full flex justify-center"
                     perspective={1000}
                     glareEnable={true}

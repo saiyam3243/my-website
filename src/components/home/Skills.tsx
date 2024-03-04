@@ -1,4 +1,4 @@
-import { SkillSphere } from "../extra/TagCloud"
+import { SkillSphere } from "../utils/TagCloud"
 import React from 'react';
 
 
