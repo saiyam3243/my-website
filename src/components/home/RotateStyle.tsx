@@ -23,7 +23,7 @@ const RotateStyle = () => {
                     scale={1}
                     gyroscope={true}>
                     <Image 
-                        src="public/profilepic.jpg" 
+                        src="/profilepic.jpg" 
                         alt="profile" 
                         width={600} 
                         height={600} 
