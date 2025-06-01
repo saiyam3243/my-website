@@ -7,38 +7,29 @@ const LandingPage: React.FC = () => {
         <div className="mt-12">
             <ParallaxBanner
                 layers={[
-                    // {
-                    //     image: 'sj-logo.png', speed: 40, translateY: [0, 50],
-                    //     opacity: [0.8, 0.3],
-                    //     scale: [0.2, 0.85, 'easeInOutBack'],
-                    //     shouldAlwaysCompleteAnimation: true,
-                    // },
-                    // { image: "signature.png", speed: 30 },
                     {
                         speed: -20,
                         opacity: [1, 0.5],
                         scale: [0.8, 1.2, 'easeInCubic'],
                         children: (
                             <div className="absolute inset-0 flex items-center justify-center font-medium" data-aos="fade-down">
-                                {/* <div className=" inset-0 bg-gradient-to-t from-gray-900 to-blue-900" /> */}
-                                {/* <h1 className="text-4xl">I am a&nbsp;</h1> */}
                                 <video
                                     autoPlay
                                     loop
                                     muted
                                     playsInline
-                                    className="w-full object-cover absolute"
-
+                                    className="w-full h-full object-cover absolute"
                                 >
                                     <source src="vid1.mp4" type="video/mp4" />
                                 </video>
-                                <Typewriter toType={["Welcome","I'm Saiyam Jain", "Based in Munich", "Software Developer"]} />
-
+                                <div className="relative z-10 text-center px-4">
+                                    <Typewriter toType={["Welcome","I'm Saiyam Jain", "Based in Munich", "Software Developer"]} />
+                                </div>
                             </div>
                         ),
                     },
                 ]}
-                className="aspect-[2/1]"
+                className="aspect-[2/1] min-h-[50vh]"
             />
         </div>
     );
